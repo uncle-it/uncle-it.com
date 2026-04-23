@@ -1,20 +1,17 @@
-## 创建项目
+# Create Project
 
 ```bash
 hugo new project uncle-it
 ```
 
-## 创建新的主题
+## Create new theme
 
 ```bash
 hugo new theme uncleIt
 ```
 
+## Run dev
 
-
-## 运行
-
-```
+```bash
 hugo server -D
 ```
-

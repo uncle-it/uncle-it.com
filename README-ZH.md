@@ -12,6 +12,6 @@ hugo new theme uncleIt
 
 ## 运行
 
-```
+```bash
 hugo server -D
 ```
