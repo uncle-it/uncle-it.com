@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+=======
+[submodule "themes/uncleItTheme"]
+	path = themes/uncleItTheme
+	url = https://github.com/theNewDynamic/gohugo-theme-uncleItTheme.git
+>>>>>>> 92bb957 (first commit)
