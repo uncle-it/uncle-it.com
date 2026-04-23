@@ -1,0 +1,5 @@
+[read_more]
+other = "Read More"
+
+[last_updated]
+other = "Last updated on {{ . }}"

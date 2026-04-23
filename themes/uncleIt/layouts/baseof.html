@@ -4,6 +4,17 @@
   {{ partial "head.html" . }}
 </head>
 <body>
+	<nav>
+  {{ if .IsTranslated }}
+    <ul>
+      {{ range .Translations }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</nav>
   <header>
     {{ partial "header.html" . }}
   </header>

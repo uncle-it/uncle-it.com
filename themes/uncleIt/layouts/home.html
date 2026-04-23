@@ -2,7 +2,7 @@
   {{ .Content }}
   {{ range site.RegularPages }}
     <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      <h2 class="w-1/12"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       {{ .Summary }}
     </section>
   {{ end }}

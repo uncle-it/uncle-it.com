@@ -1,0 +1,5 @@
+[read_more]
+other = "阅读全文"
+
+[last_updated]
+other = "最后更新于 {{ . }}"

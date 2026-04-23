@@ -17,3 +17,10 @@ hugo new theme uncleIt
 ```bash
 hugo server -D
 ```
+
+## 新建文章
+
+```bash
+hugo new posts/my-first-post.md
+```
+
