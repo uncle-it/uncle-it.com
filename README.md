@@ -1,3 +1,5 @@
+[简体中文](README-ZH.md)
+
 # Create Project
 
 ```bash
