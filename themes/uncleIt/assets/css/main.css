@@ -1,12 +1,22 @@
 @import "components/header.css";
 @import "components/footer.css";
 @import "1024.css";
-@import "640.css";
+@import "768.css";
 @import "desktop.css";
 
 :root {
 	--color-tiffany: #05c1ca;
-	--color-background: #f0f0f0;
+	--color-background: #242424;
+	--pane-color-background: #303030;
+	--icon-color: #949494;
+	--active-color: #ffffff;
+	--font-color: #cbcbcb;
+	--orange-color: #cc8343;
+	--yellow-color: #f1bc68;
+	--green-color: #6a8759;
+	--blue-color: #7a9fc2;
+	--red-color: #ff5d5f;
+	--purple-color: #9d7baf;
 }
 
 .tiffany-color {
@@ -17,7 +27,7 @@
 }
 
 body {
-	color: #222;
+	color: var(--font-color);
 	font-family: sans-serif;
 	line-height: 1.5;
 	font-size: var(--font-size);
@@ -27,11 +37,47 @@ body {
 }
 
 a {
-  color: #00e;
-  text-decoration: none;
+	color: var(--yellow-color);
+	text-decoration: none;
 }
 
 .column {
 	font-size: small;
 }
 
+/* --------------- header ------------------------- */
+
+.site-header {
+	background: var(--pane-color-background);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	height: var(--header-height);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 16px;
+	height: 100%;
+}
+
+.logo img {
+	height: calc(var(--header-height) - 12px);
+	vertical-align: middle;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--color-tiffany);
+	text-decoration: none;
+}
+
+/* --------------- ------------------------- */

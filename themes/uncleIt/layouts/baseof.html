@@ -4,7 +4,7 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
+  <header class="site-header">
     {{ partial "header.html" . }}
   </header>
   <div class="container">
@@ -16,7 +16,7 @@ left,left,left
 	<main>
     	{{ block "main" . }}{{ end }}
   	</main>
-	
+
 	<div class="column right">
 right,right,right
 	</div>

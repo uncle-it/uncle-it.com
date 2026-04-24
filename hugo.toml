@@ -1,7 +1,12 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
+baseURL = 'https://uncle-it.com/'
+locale = 'zh-cn'
 title = 'Uncle IT'
 theme = 'uncleIt'
+
+[params]
+  logo = '/logo/logo256-round.png'
+  description = "Uncle IT"
+
 
 disablePathToLower = false # 强制所有 URL 路径转为小写
 

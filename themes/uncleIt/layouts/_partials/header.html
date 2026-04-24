@@ -1,2 +1,21 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class="container header-wrapper">
+    <a href="/" class="logo" alt="{{ site.Title }}">
+      {{ if site.Params.logo }}
+        <img src="{{ site.Params.logo }}" alt="{{ site.Title }}">
+      {{ else }}
+        <span>{{ site.Title }}</span>
+      {{ end }}
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>
+
+
+

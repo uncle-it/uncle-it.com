@@ -1,6 +1,7 @@
 @media (min-width: 1024px) {
 	:root {
 		--font-size: 1.2rem;
+		--header-height: 100px;
 	}
 
 	.container {
@@ -20,4 +21,40 @@
 		order: 3;
 		grid-column: 3;
 	}
+
+	/* --------------- header ------------------------- */
+
+	.menu-toggle {
+		display: none;
+	}
+	/* 导航链接 */
+	.nav-menu {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.nav-menu ul {
+		display: flex;
+		gap: 2rem;
+		list-style: none;
+		/* 去掉圆点 */
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-menu a {
+		text-decoration: none;
+		color: var(--icon-color);
+		font-weight: 500;
+		transition: color 0.3s;
+	}
+
+	.nav-menu a.active,
+	.nav-menu a:hover {
+		color: var(--active-color);
+	}
+
+	/* ---------------  ------------------------- */
+
+	
 }

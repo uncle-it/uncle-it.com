@@ -1,10 +1,42 @@
 @media (max-width: 1024px) {
 	:root {
 		--font-size: 1.1rem;
+		--header-height: 100px;
 	}
 
 	.container {
 		display: grid;
 		grid-template-columns: 150px 2fr;
 	}
+
+	/* --------------- header ------------------------- */
+
+	.nav-menu {
+		display: flex;
+		gap: 2rem;
+	}
+
+	.nav-menu ul {
+		display: flex;
+		gap: 2rem;
+		list-style: none;
+		/* 去掉圆点 */
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-menu a {
+		text-decoration: none;
+		color: var(--icon-color);
+		font-weight: 500;
+		transition: color 0.3s;
+	}
+
+	.nav-menu a.active,
+	.nav-menu a:hover {
+		color: var(--active-color);
+	}
+
+	/* ---------------  ------------------------- */
+	
 }

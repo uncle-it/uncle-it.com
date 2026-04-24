@@ -1,5 +1,5 @@
-baseURL = 'https://example.org/'
-locale = 'en-US'
+baseURL = 'https://uncle-it.com/'
+locale = 'zh-cn'
 title = 'Uncle IT'
 
 [menus]
