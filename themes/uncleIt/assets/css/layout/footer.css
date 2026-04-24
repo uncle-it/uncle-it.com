@@ -1,0 +1,7 @@
+footer {
+  border-top: 1px solid var(--pane-color-background);
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: small;
+}

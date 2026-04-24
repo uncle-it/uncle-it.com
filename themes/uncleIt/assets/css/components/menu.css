@@ -1,24 +1,63 @@
+/*** ------min-width: 1024px -------- ***/
+.menu-toggle {
+	display: none;
+}
+
+/* 导航链接 */
+.nav-menu {
+	display: flex;
+	gap: 2rem;
+}
+
+.nav-menu ul {
+	display: flex;
+	gap: 2rem;
+	list-style: none;
+	/* 去掉圆点 */
+	margin: 0;
+	padding: 0;
+}
+
+.nav-menu a {
+	text-decoration: none;
+	color: var(--icon-color);
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+	color: var(--active-color);
+}
+
+@media (max-width: 1024px) {
+	.nav-menu {
+		display: flex;
+	}
+
+	.nav-menu ul {
+		display: flex;
+		gap: 1.5rem;
+		list-style: none;
+		/* 去掉圆点 */
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-menu a {
+		text-decoration: none;
+		color: var(--icon-color);
+		font-weight: 500;
+		transition: color 0.3s;
+	}
+
+	.nav-menu a.active,
+	.nav-menu a:hover {
+		color: var(--active-color);
+	}
+}
+
 @media (max-width: 768px) {
-	:root {
-		--font-size: 1rem;
-		--header-height: 80px;
-	}
-
-	/* --------------- container ------------------------- */
-	.container {
-		grid-template-columns: 1fr;
-	}
-	main {
-		order: 1;
-	}
-	.left {
-		order: 2;
-	}
-	.right {
-		order: 3;
-	}	
-
-	/* --------------- header ------------------------- */
 	.hamburger {
 		display: flex;
 		flex-direction: column;
@@ -92,8 +131,4 @@
 		max-height: 500px;
 	}
 
-	/* ---------------  ------------------------- */
-
 }
-
-

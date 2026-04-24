@@ -1,0 +1,62 @@
+@import "../components/menu.css";
+
+:root {
+	--header-height: 80px;
+}
+
+.site-header {
+	background: var(--pane-color-background);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	height: var(--header-height);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+
+
+	& .header-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 16px;
+		height: 100%;
+	}
+
+	& .logo img {
+		height: calc(var(--header-height) - 12px);
+		vertical-align: middle;
+	}
+
+	& .logo {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: var(--color-tiffany);
+		text-decoration: none;
+	}
+
+	& .mobile-only-search {
+		display: none;
+	}
+}
+
+
+
+@media (max-width: 1024px) {
+	:root {
+		--header-height: 80px;
+	}
+
+	.site-header {
+		& .mobile-only-search {
+			flex-grow: 1;
+			display: block;
+		}
+	}
+		
+}
+
+@media (max-width: 768px) {
+	:root {
+		--header-height: 60px;
+	}
+}
+

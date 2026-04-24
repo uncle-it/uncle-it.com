@@ -1,0 +1,11 @@
+.left-sticky-panel {
+	position: sticky;
+	top: 2rem;
+	/* 确保容器高度只包裹内容 */
+	height: fit-content;
+}
+
+
+@media (max-width: 768px) {
+	
+}

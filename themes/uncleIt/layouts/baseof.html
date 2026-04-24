@@ -7,20 +7,26 @@
   <header class="site-header">
     {{ partial "header.html" . }}
   </header>
+
+    
+
   <div class="container">
-	
-	<div class="column left">
-left,left,left
-	</div>
+	<div class="column left-sticky">
+		left,left,left
+  	</div>
 
 	<main>
     	{{ block "main" . }}{{ end }}
   	</main>
 
 	<div class="column right">
-right,right,right
+		{{ partial "search.html" . }}
 	</div>
   </div>
+
+ 
+
+
   <footer>
     {{ partial "footer.html" . }}
   </footer>

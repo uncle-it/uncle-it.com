@@ -1,8 +1,8 @@
-@import "components/header.css";
-@import "components/footer.css";
-@import "1024.css";
-@import "768.css";
-@import "desktop.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/container.css";
+@import "layout/left-panel.css";
+@import "components/search.css";
 
 :root {
 	--color-tiffany: #05c1ca;
@@ -17,6 +17,7 @@
 	--blue-color: #7a9fc2;
 	--red-color: #ff5d5f;
 	--purple-color: #9d7baf;
+	--font-size: 1.2rem;
 }
 
 .tiffany-color {
@@ -41,43 +42,14 @@ a {
 	text-decoration: none;
 }
 
-.column {
-	font-size: small;
+@media (max-width: 1024px) {
+	:root {
+		--font-size: 1.1rem;
+	}
 }
 
-/* --------------- header ------------------------- */
-
-.site-header {
-	background: var(--pane-color-background);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	height: var(--header-height);
-	position: sticky;
-	top: 0;
-	z-index: 1000;
+@media (max-width: 768px) {
+	:root {
+		--font-size: 1rem;
+	}
 }
-
-.menu-toggle {
-	display: none;
-}
-
-.header-wrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 16px;
-	height: 100%;
-}
-
-.logo img {
-	height: calc(var(--header-height) - 12px);
-	vertical-align: middle;
-}
-
-.logo {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: var(--color-tiffany);
-	text-decoration: none;
-}
-
-/* --------------- ------------------------- */

@@ -1,4 +1,4 @@
-<div class="container header-wrapper">
+<div class="header-wrapper">
     <a href="/" class="logo" alt="{{ site.Title }}">
       {{ if site.Params.logo }}
         <img src="{{ site.Params.logo }}" alt="{{ site.Title }}">
@@ -6,6 +6,10 @@
         <span>{{ site.Title }}</span>
       {{ end }}
     </a>
+
+	<div class="mobile-only-search">
+        {{ partial "search.html" . }}
+    </div>
 
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="hamburger">

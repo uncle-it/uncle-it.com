@@ -1,0 +1,55 @@
+.search {
+	display: block;
+	/* 手机端开启显示 */
+	flex-grow: 1;
+	/* 占据 Logo 和 汉堡按钮之间的空间 */
+	margin: 0 2rem;
+	/* 与左右拉开间距 */
+
+
+	& form {
+		display: flex;
+		align-items: center;
+		background: var(--color-background);
+		border-radius: 20px;
+		padding: 4px 12px;
+	}
+
+	& input {
+		border: none;
+		background: transparent;
+		outline: none;
+		width: 100%;
+		font-size: 18px;
+		color: var(--font-size);
+	}
+
+	& button {
+		background: none;
+		border: none;
+		color: var(--color-tiffany);
+		display: flex;
+		padding: 0;
+		cursor: pointer;
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.search {
+
+	& input {
+			font-size: 16px;
+		}
+	}
+}
+
+
+@media (max-width: 768px) {
+	.search{
+		& input {
+			font-size: 16px;
+		}
+	} 
+}
+
