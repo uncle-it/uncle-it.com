@@ -4,23 +4,23 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-	<nav>
-  {{ if .IsTranslated }}
-    <ul>
-      {{ range .Translations }}
-        <li>
-          <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  {{ end }}
-</nav>
   <header>
     {{ partial "header.html" . }}
   </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
+  <div class="container">
+	
+	<div class="column left">
+left,left,left
+	</div>
+
+	<main>
+    	{{ block "main" . }}{{ end }}
+  	</main>
+	
+	<div class="column right">
+right,right,right
+	</div>
+  </div>
   <footer>
     {{ partial "footer.html" . }}
   </footer>

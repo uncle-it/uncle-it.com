@@ -3,3 +3,12 @@ other = "阅读全文"
 
 [last_updated]
 other = "最后更新于 {{ . }}"
+
+[tags]
+other = "标签"
+
+[posts]
+other = "文章"
+
+[home]
+other = "主页"

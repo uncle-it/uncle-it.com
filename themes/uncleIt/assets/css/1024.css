@@ -1,0 +1,10 @@
+@media (max-width: 1024px) {
+	:root {
+		--font-size: 1.1rem;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 150px 2fr;
+	}
+}

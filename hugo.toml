@@ -1,10 +1,11 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Uncle IT'
 theme = 'uncleIt'
 
-defaultContentLanguage = "zh-cn" # 默认语言
+disablePathToLower = false # 强制所有 URL 路径转为小写
 
+defaultContentLanguage = "zh-cn" # 默认语言
 [languages]
   [languages.zh-cn]
     languageName = "简体中文"

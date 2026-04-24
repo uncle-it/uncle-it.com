@@ -1,19 +1,22 @@
 baseURL = 'https://example.org/'
 locale = 'en-US'
-title = 'My New Hugo Project'
+title = 'Uncle IT'
 
 [menus]
   [[menus.main]]
+  	identifier = "home"  # 这是一个唯一的 ID,对应翻译里的ID
     name = 'Home'
     pageRef = '/'
     weight = 10
 
   [[menus.main]]
+  	identifier = "posts"
     name = 'Posts'
     pageRef = '/posts'
     weight = 20
 
   [[menus.main]]
+  	identifier = "tags"
     name = 'Tags'
     pageRef = '/tags'
     weight = 30

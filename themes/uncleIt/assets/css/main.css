@@ -1,15 +1,37 @@
 @import "components/header.css";
 @import "components/footer.css";
+@import "1024.css";
+@import "640.css";
+@import "desktop.css";
+
+:root {
+	--color-tiffany: #05c1ca;
+	--color-background: #f0f0f0;
+}
+
+.tiffany-color {
+	color: #05c1ca;
+}
+.bg-tiffany {
+	background-color: var(--color-tiffany);
+}
 
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+	color: #222;
+	font-family: sans-serif;
+	line-height: 1.5;
+	font-size: var(--font-size);
+	margin: 0 auto;
+	width: 100%;
+	background-color: var(--color-background);
 }
 
 a {
   color: #00e;
   text-decoration: none;
 }
+
+.column {
+	font-size: small;
+}
+

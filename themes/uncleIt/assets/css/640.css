@@ -1,0 +1,19 @@
+@media (max-width: 640px) {
+	:root {
+		--font-size: 1rem;
+	}
+
+	.container {
+		grid-template-columns: 1fr;
+	}
+	main {
+		order: 1;
+	}
+	.left {
+		order: 2;
+	}
+	.right {
+		order: 3;
+	}
+}
+
