@@ -1,5 +1,5 @@
 <div class="post-list">
-  	{{ $paginator := .Paginate site.RegularPages 1 }}
+  	{{ $paginator := .Paginate site.RegularPages site.Params.pagesize }}
     {{ range $paginator.Pages }}
     <section class="post-item">
 	  <a href="{{ .RelPermalink }}">

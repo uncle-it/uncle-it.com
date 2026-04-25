@@ -21,3 +21,7 @@
   [module.hugoVersion]
     extended = false
     min = '0.146.0'
+
+[params]
+  pagesize = 30
+  site_author = "Uncle IT"

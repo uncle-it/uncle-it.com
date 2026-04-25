@@ -1,11 +1,11 @@
 {{ $pag := .Paginator }}
-{{ if gt $pag.TotalPages 1 }}
+
+{{ if gt $pag.TotalNumberOfElements site.Params.pagesize }}
 <nav class="pagination-container">
     <div class="pagination-info">
 		{{ T "total_recode" .Paginator.TotalNumberOfElements | safeHTML }}
 		<!-- DEBUG: {{ .Paginator.TotalNumberOfElements }} -->
     </div>
-
 
     <ul class="pagination">
         {{ if $pag.HasPrev }}
