@@ -4,6 +4,9 @@ other = "Read More"
 [last_updated]
 other = "Last updated on {{ . }}"
 
+[categories]
+other = "Categories"
+
 [tags]
 other = "Tags"
 
@@ -15,3 +18,12 @@ other = "Home"
 
 [search]
 other = "Search"
+
+[total_recode]
+other = "Total <strong>{{ . }}</strong> record(s)"
+
+[prev_page]
+other = "Prev"
+
+[next_page]
+other = "Next"

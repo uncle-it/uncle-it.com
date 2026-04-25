@@ -1,3 +1,5 @@
+@import "../components/pagination.css";
+
 .post-list{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -32,7 +34,7 @@
 		object-position: center;	
 		display: block;
 		/* 强制产生一个比例，触发裁剪 */
-		aspect-ratio: 16 / 9;
+		/* aspect-ratio: 16 / 9; */
 		border-radius: 10px 10px 0 0;
 	}
 }

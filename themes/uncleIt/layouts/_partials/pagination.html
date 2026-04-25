@@ -1,0 +1,36 @@
+{{ $pag := .Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<nav class="pagination-container">
+    <div class="pagination-info">
+		{{ T "total_recode" .Paginator.TotalNumberOfElements | safeHTML }}
+		<!-- DEBUG: {{ .Paginator.TotalNumberOfElements }} -->
+    </div>
+
+
+    <ul class="pagination">
+        {{ if $pag.HasPrev }}
+            <li class="page-item"><a href="{{ $pag.First.URL }}" class="page-link">«</a></li>
+            <li class="page-item"><a href="{{ $pag.Prev.URL }}" class="page-link">{{ T "prev_page"}}</a></li>
+        {{ end }}
+
+        {{ range $pag.Pagers }}
+            {{/* 只有当前页的前后 3 页才显示，避免页码过多 */}}
+            {{ $shouldShow := false }}
+            {{ if and (ge .PageNumber (sub $pag.PageNumber 3)) (le .PageNumber (add $pag.PageNumber 3)) }}
+                {{ $shouldShow = true }}
+            {{ end }}
+
+            {{ if $shouldShow }}
+                <li class="page-item {{ if eq . $pag }}active{{ end }}">
+                    <a href="{{ .URL }}" class="page-link">{{ .PageNumber }}</a>
+                </li>
+            {{ end }}
+        {{ end }}
+
+        {{ if $pag.HasNext }}
+            <li class="page-item"><a href="{{ $pag.Next.URL }}" class="page-link">{{ T "next_page"}}</a></li>
+            <li class="page-item"><a href="{{ $pag.Last.URL }}" class="page-link">»</a></li>
+        {{ end }}
+    </ul>
+</nav>
+{{ end }}

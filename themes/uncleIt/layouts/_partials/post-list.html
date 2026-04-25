@@ -1,10 +1,11 @@
 <div class="post-list">
-  {{ range site.RegularPages }}
-    <section>
+  	{{ $paginator := .Paginate site.RegularPages 1 }}
+    {{ range $paginator.Pages }}
+    <section class="post-item">
 	  <a href="{{ .RelPermalink }}">
         {{ $image := .Resources.GetMatch "featured-*" }}
         {{ with $image }}
-          {{ $scaled := .Fill "400x250" }} <img src="{{ $scaled.RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
+          {{ $scaled := .Fill "400x225" }} <img src="{{ $scaled.RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
         {{ else }}
           <div class="placeholder-img"></div>
         {{ end }}
@@ -15,5 +16,7 @@
 		<time>{{ .Date.Format "2006-01-02" }}</time>
 	  </div>
     </section>
-  {{ end }}
+	{{ end }}
 </div>
+
+{{ partial "pagination.html" . }}

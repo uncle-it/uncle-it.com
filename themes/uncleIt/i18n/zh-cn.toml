@@ -18,3 +18,12 @@ other = "主页"
 
 [search]
 other = "搜索"
+
+[total_recode]
+other = "共 <strong>{{ . }}</strong> 条记录"
+
+[prev_page]
+other = "上一页"
+
+[next_page]
+other = "下一页"
