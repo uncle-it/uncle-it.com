@@ -15,12 +15,13 @@ Renders a menu for the given menu ID.
     <ul>
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
 
-	  {{ if page.IsTranslated }}
+	  <!-- {{ if page.IsTranslated }}
 		{{ range page.Translations }}
-			<!-- <li><a href="{{ .Permalink }}">{{ page.Language.LanguageName }}</a></li> -->
+			<!-- <li><a href="{{ .Permalink }}">{{ page.Language.LanguageName }}</a></li>
 			<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
 		{{ end }}
-  	  {{ end }}
+  	  {{ end }} -->
+
     </ul>
   </nav>
 {{- end }}

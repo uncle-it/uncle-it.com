@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="post-list">
+  {{ range .Paginator.Pages }}
+  <article class="post-card">
+    <div class="post-thumbnail">
+      <a href="{{ .RelPermalink }}">
+        {{ $image := .Resources.GetMatch "featured-*" }}
+        {{ with $image }}
+          {{ $scaled := .Fill "400x250" }} <img src="{{ $scaled.RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
+        {{ else }}
+          <div class="placeholder-img"></div>
+        {{ end }}
+      </a>
+    </div>
+
+    <div class="post-content">
+      <time>{{ .Date.Format "2006-01-02" }}</time> <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2> <p class="summary">{{ .Summary | truncate 100 }}</p> </div>
+  </article>
+  {{ end }}
+  
+  {{ partial "pagination.html" . }}
+</div>
+{{ end }}

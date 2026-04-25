@@ -18,3 +18,4 @@ theme = 'uncleIt'
     languageName = "English"
     contentDir = "content/en-US"    # 英文内容放在这里
     weight = 2
+

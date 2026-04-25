@@ -17,6 +17,12 @@
     pageRef = '/tags'
     weight = 30
 
+  [[menus.main]]
+  	identifier = "categories"
+    name = 'Categories'
+    pageRef = '/categories'
+    weight = 40
+
 [module]
   [module.hugoVersion]
     extended = false

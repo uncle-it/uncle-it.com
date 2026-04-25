@@ -4,6 +4,9 @@ other = "阅读全文"
 [last_updated]
 other = "最后更新于 {{ . }}"
 
+[categories]
+other = "分类"
+
 [tags]
 other = "标签"
 

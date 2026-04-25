@@ -1,0 +1,13 @@
+{{/* 这个钩子会自动处理 Markdown 里的 [Link A]({{< ref "xxx" >}}) 
+  .Destination 就是 ref 解析出来的 URL
+*/}}
+<a href="{{ .Destination | safeURL }}" 
+   {{ with .Title }} title="{{ . }}" {{ end }}
+   {{ if strings.HasPrefix .Destination "http" }}
+     target="_blank" rel="noopener"
+   {{ else }}
+     {{/* 如果你想让内部链接也新窗口打开，就把下面这行 target 提到 if 外面 */}}
+     target="_blank" rel="noopener"
+   {{ end }}>
+   {{ .Text | safeHTML }}
+</a>
