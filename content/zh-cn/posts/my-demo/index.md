@@ -1,8 +1,8 @@
 ---
-build:
-  list: always
-  publishResources: true
-  render: always
+# build:
+#   list: always
+#   publishResources: true
+#   render: always
 
 # build:
 #   list: never
@@ -11,23 +11,22 @@ build:
 
 title: "开发测试 Demo"
 # 同目录中以 featured- 开头的图片作为缩略图
-date: 2026-04-24
+date: 2026-04-23
+
 # 使用 categories 进行大类划分
 categories: ["建站"]
 # 使用 tags 进行细化标注
 tags: ["Hugo", "CSS"]
 
-draft: false
+# draft: false
 
 params:
   color: red
   size: medium
 
-# summary: "这是我开发  [Hugo](https://gohugo.io) 做的 Demo，用于记录语法和技巧"
+summary: "这是我开发 Hugo 做的 Demo，用于记录语法和技巧"
 ---
-
-这是我开发  [Hugo](https://gohugo.io) 做的 Demo，用于记录语法和技巧 more 方式
-
+<!-- 这是我开发  [Hugo](https://gohugo.io) 做的 Demo，用于记录语法和技巧 more 方式. -->
 <!--more-->
 
 ## 介绍

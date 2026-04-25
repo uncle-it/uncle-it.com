@@ -12,7 +12,7 @@ tags:
 
 draft: false
 
-summary: "这是我用  [Hugo](https://gohugo.io) 做的第2个博客网站，主要是记录工作当中遇到的一些问题以及解决的方法。"
+summary: "这是我用  [Hugo](https://gohugo.io) 做的第2个博客网站。"
 ---
 
 ## 介绍

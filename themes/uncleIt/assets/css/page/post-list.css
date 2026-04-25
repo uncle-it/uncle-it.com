@@ -1,0 +1,38 @@
+.post-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 15px;
+	padding: 0;
+
+	& section{
+		background: var(--pane-color-background);
+		border-radius: 10px;
+
+		& h4 {
+			margin: 0;
+		}
+
+		& .info{
+			margin: 10px;
+		}
+
+		& time {
+			display: block;
+			font-size: 0.9rem;
+			color: var(--icon-color);
+		}
+		& .summary{
+			font-size: 1rem;
+		}
+	}
+
+	& a img {
+		width: 100%;
+		object-fit: cover;
+		object-position: center;	
+		display: block;
+		/* 强制产生一个比例，触发裁剪 */
+		aspect-ratio: 16 / 9;
+		border-radius: 10px 10px 0 0;
+	}
+}

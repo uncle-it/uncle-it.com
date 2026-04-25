@@ -3,6 +3,8 @@
 @import "layout/container.css";
 @import "layout/left-panel.css";
 @import "components/search.css";
+@import "page/post-list.css";
+@import "page/taxonomy.css";
 
 :root {
 	--color-tiffany: #05c1ca;
@@ -40,6 +42,11 @@ body {
 a {
 	color: var(--yellow-color);
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 10px;
 }
 
 @media (max-width: 1024px) {

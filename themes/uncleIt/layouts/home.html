@@ -1,19 +1,4 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <section>
-		 <a href="{{ .RelPermalink }}">
-        {{ $image := .Resources.GetMatch "featured-*" }}
-        {{ with $image }}
-          {{ $scaled := .Fill "400x250" }} <img src="{{ $scaled.RelPermalink }}" alt="{{ $.Title }}" loading="lazy">
-        {{ else }}
-          <div class="placeholder-img"></div>
-        {{ end }}
-      </a>
-      <h2 class="w-1/12"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
+	{{ .Content }} {{ partial "post-list.html" . }}
 
-      <p><time>{{ .Date.Format "2006-01-02" }}</time></p>
-    </section>
-  {{ end }}
 {{ end }}

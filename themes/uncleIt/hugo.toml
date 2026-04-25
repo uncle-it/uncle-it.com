@@ -6,21 +6,15 @@
     weight = 10
 
   [[menus.main]]
-  	identifier = "posts"
-    name = 'Posts'
-    pageRef = '/posts'
-    weight = 20
+  	identifier = "categories"
+    name = 'Categories'
+    pageRef = '/categories'
+    weight = 30
 
   [[menus.main]]
   	identifier = "tags"
     name = 'Tags'
     pageRef = '/tags'
-    weight = 30
-
-  [[menus.main]]
-  	identifier = "categories"
-    name = 'Categories'
-    pageRef = '/categories'
     weight = 40
 
 [module]
