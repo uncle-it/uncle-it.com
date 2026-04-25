@@ -17,7 +17,8 @@ Renders a menu for the given menu ID.
 
 	  {{ if page.IsTranslated }}
 		{{ range page.Translations }}
-			<li><a href="{{ .Permalink }}">{{ page.Language.LanguageName }}</a></li>
+			<!-- <li><a href="{{ .Permalink }}">{{ page.Language.LanguageName }}</a></li> -->
+			<li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
 		{{ end }}
   	  {{ end }}
     </ul>

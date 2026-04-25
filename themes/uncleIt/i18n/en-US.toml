@@ -1,0 +1,14 @@
+[read_more]
+other = "Read More"
+
+[last_updated]
+other = "Last updated on {{ . }}"
+
+[tags]
+other = "Tags"
+
+[posts]
+other = "Posts"
+
+[home]
+other = "Home"

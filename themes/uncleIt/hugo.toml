@@ -1,7 +1,3 @@
-baseURL = 'https://uncle-it.com/'
-locale = 'zh-cn'
-title = 'Uncle IT'
-
 [menus]
   [[menus.main]]
   	identifier = "home"  # 这是一个唯一的 ID,对应翻译里的ID
