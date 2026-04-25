@@ -49,11 +49,6 @@
 		
 	}
 
-	/* 特殊按钮样式 (上一页/下一页) */
-	& .page-item.active .page-link:hover {
-		background-color: transparent;
-	}
-
 	& .page-item.prev,.page-item.next {
 		margin: 0 10px;
 	}
@@ -62,16 +57,5 @@
 
 /* 隐藏第一页/最后一页的移动端适配 */
 @media (max-width: 768px) {
-.pagination-container {
-	& .pagination-info {
-		display: none;
-	}
 
-	& .page-link {
-		padding: 8px 12px;
-		text-decoration: none;
-		font-size: 0.9rem;
-	}
-}
-	
 }

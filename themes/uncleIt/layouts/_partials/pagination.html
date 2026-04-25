@@ -16,7 +16,7 @@
         {{ range $pag.Pagers }}
             {{/* 只有当前页的前后 3 页才显示，避免页码过多 */}}
             {{ $shouldShow := false }}
-            {{ if and (ge .PageNumber (sub $pag.PageNumber 3)) (le .PageNumber (add $pag.PageNumber 3)) }}
+            {{ if and (ge .PageNumber (sub $pag.PageNumber 4)) (le .PageNumber (add $pag.PageNumber 4)) }}
                 {{ $shouldShow = true }}
             {{ end }}
 

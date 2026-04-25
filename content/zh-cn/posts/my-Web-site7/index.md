@@ -1,0 +1,31 @@
+---
+title: "关于 Uncle IT 网站3"
+date: 2026-04-25
+# 使用 categories 进行大类划分
+categories:
+  - "健康管理"
+  - "技术教程"
+# 使用 tags 进行细化标注
+tags:
+  - "Hugo"
+  - "CSS"
+
+draft: false
+
+summary: "这是我用  [Hugo](https://gohugo.io) 做的第2个博客网站。"
+---
+
+## 介绍
+
+这是我用  [Hugo](https://gohugo.io) 做的第一个博客网站，主要是记录工作当中遇到的一些问题以及解决的方法。
+
+这个网站是我第一次使用 Hugo，我选择它的原因主要是：
+
+- 它能高效地生HTML 文件，而且对 SEO 也是极其友好。
+- 编辑过程是纯 Markdown 文件，对我这个程序员来说是极其友好的。
+- 我还可以把 Markdown 公开出来给 AI 引擎爬取，对 GEO 也是非常友好。
+- 我不想买服务器，因为自己管理和维护服务器需要时间和精力，我想全部使用 Cloudflare 来帮我解决这些问题。
+
+在这里，我把建站的过程以及遇到的问题分享出来，如有不足之处，请多多指教，谢谢！🤝
+
+[![游戏](featured-1.jpg)](featured-1.jpg)
