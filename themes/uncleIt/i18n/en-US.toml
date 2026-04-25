@@ -12,3 +12,6 @@ other = "Posts"
 
 [home]
 other = "Home"
+
+[search]
+other = "Search"
