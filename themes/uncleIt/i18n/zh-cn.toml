@@ -27,3 +27,18 @@ other = "上一页"
 
 [next_page]
 other = "下一页"
+
+[ad_space]
+other = "广告位"
+
+[archives]
+other = "文章归档"
+
+[total_year_article_archives]
+other = "<strong>{{ .Year }}年</strong> ({{ .Count }}篇)"
+
+[no_tags]
+other = "暂无标签"
+
+[no_category]
+other = "暂无分类"

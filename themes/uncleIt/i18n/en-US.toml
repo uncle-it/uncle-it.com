@@ -27,3 +27,19 @@ other = "Prev"
 
 [next_page]
 other = "Next"
+
+[ad_space]
+other = "Ad space"
+
+[archives]
+other = "Article Archives"
+
+[total_year_article_archives]
+one = "<strong>{{ .Year }}</strong> ({{ .Count }} post)"
+other = "<strong>{{ .Year }}</strong> ({{ .Count }} posts)"
+
+[no_tag]
+other = "No tag"
+
+[no_category]
+other = "No category"

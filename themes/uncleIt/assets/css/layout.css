@@ -2,6 +2,7 @@
 @import "layout/footer.css";
 @import "layout/container.css";
 @import "layout/left-panel.css";
+@import "layout/right-panel.css";
 @import "components/search.css";
 @import "page/post-list.css";
 @import "page/taxonomy.css";

@@ -1,6 +1,17 @@
 <div class="post-list">
-  	{{ $paginator := .Paginate site.RegularPages site.Params.pagesize }}
+	{{/* 动态获取页面数据源 */}}
+    {{ $pages := .RegularPages }} {{/* 默认获取当前上下文的普通页面 */}}
+    
+    {{ if .IsHome }}
+        {{ $pages = site.RegularPages }} {{/* 如果是首页，才获取全站文章 */}}
+    {{ else if .Data.Pages }}
+        {{ $pages = .Data.Pages }} {{/* 如果是 Taxonomy (标签/分类) 页面，获取该术语下的文章 */}}
+    {{ end }}
+
+    {{/* 执行分页：使用 site.Params.pagesize 或默认值 10 */}}
+    {{ $paginator := .Paginate $pages (site.Params.pagesize | default 20) }}
     {{ range $paginator.Pages }}
+	
     <section class="post-item">
 	  <a href="{{ .RelPermalink }}">
         {{ $image := .Resources.GetMatch "featured-*" }}

@@ -11,16 +11,44 @@
     
 
   <div class="container">
+
 	<div class="column left-sticky">
-		left,left,left
+  		{{ partial "sidebar-taxonomy.html" . }}
   	</div>
 
 	<main>
     	{{ block "main" . }}{{ end }}
   	</main>
 
-	<div class="column right">
-		{{ partial "search.html" . }}
+	<div class="column right-panel">
+		<div class="search-container">
+			{{ partial "search.html" . }}
+		</div>
+		
+		<div class="ads-container">
+			{{ T "ad_space" }}
+		</div>
+
+		<div class="post-date-container">
+			<h3 class="side-title">{{ T "archives" | default "文章归档" }}</h3>
+			<div class="archive-groups">
+				{{/* 按年份分组倒序 */}}
+				{{ range site.RegularPages.GroupByDate "2006" }}
+				<details open>
+					<summary>{{ T "total_year_article_archives" (dict "Year" .Key "Count" (len .Pages)) | safeHTML }}</summary>
+					<ul>
+						{{ range .Pages }}
+						<li>
+							<span class="date-mini">{{ .Date.Format "01-02" }}</span>
+							<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+						</li>
+						{{ end }}
+					</ul>
+				</details>
+				{{ end }}
+			</div>
+		</div>
+
 	</div>
   </div>
 

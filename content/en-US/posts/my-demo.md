@@ -1,5 +1,5 @@
 +++
-title = 'My First Post'
+title = 'My Demo'
 date = 2024-01-14T07:07:07+01:00
 draft = true
 +++
@@ -9,6 +9,5 @@ draft = true
 This is **bold** text, and this is *emphasized* text.
 
 Visit the [Hugo](https://gohugo.io) website!
-
 
 website

@@ -1,0 +1,39 @@
+<div class="sidebar-taxonomies">
+  
+  <section class="taxo-group">
+    <h3>{{ T "categories" | default "分类" }}</h3>
+    <ul>
+      {{/* 注意：这里使用 site.Taxonomies.categories */}}
+      {{ range $name, $taxonomy := site.Taxonomies.categories }}
+        {{/* $name 是原始名称，$taxonomy 是包含文章列表的对象 */}}
+        <li>
+          <a href="{{ site.BaseURL | relLangURL }}categories/{{ $name | urlize | lower }}/">
+            {{ $name }} 
+            <span class="count">({{ $taxonomy.Count }})</span>
+          </a>
+        </li>
+      {{ else }}
+        <li>{{ T "no_category"}}</li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <br>
+
+  <section class="taxo-group">
+    <h3>{{ T "tags" | default "标签" }}</h3>
+    <ul>
+      {{ range $name, $taxonomy := site.Taxonomies.tags }}
+	  <li>
+        <a href="{{ site.BaseURL | relLangURL }}tags/{{ $name | urlize | lower }}/">
+          {{ $name }} 
+		  <span class="count">({{ $taxonomy.Count }})</span>
+        </a>
+		</li>
+      {{ else }}
+	  	<li>{{ T "no_tag"}}</li>
+      {{ end }}
+    </ul>
+  </section>
+
+</div>

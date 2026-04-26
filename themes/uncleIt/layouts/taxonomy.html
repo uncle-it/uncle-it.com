@@ -4,7 +4,7 @@
 	{{ .Content }}
 	<div class="list">
 		{{ range .Pages }}
-			<h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h4>
+			<h4><a href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{len .Pages}})</a></h4>
 		{{ end }}
 	</div>
 </div?>

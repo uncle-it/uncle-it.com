@@ -1,8 +1,20 @@
-.left-sticky-panel {
+.container .column.left-sticky .sidebar-taxonomies{
 	position: sticky;
 	top: 2rem;
 	/* 确保容器高度只包裹内容 */
 	height: fit-content;
+	padding: 10px;
+
+	& ul{
+		padding-left: 15px;
+		
+		& li{
+			word-break:break-all;
+		}
+
+		& a{color: gray;}
+		& a:hover{ text-decoration: underline;}
+	}
 }
 
 

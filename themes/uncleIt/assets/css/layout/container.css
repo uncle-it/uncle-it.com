@@ -5,29 +5,23 @@
 	/* 必须加这行，否则 sticky 元素会被拉伸导致无法粘住 */
 	align-items: start;
 
-	& .column {
-		font-size: small;
-	}
-
 	& main {
-		padding: 1.2rem;
+		padding: 2rem;
 	}
 
 	& .column.left-sticky {
 		position: sticky;
 		/* 粘在 Header 下方一点点 */
 		top: calc(var(--header-height) + 1rem);
-			
+		font-size: small;
 		border-radius: 0 1rem 1rem 0;
 		margin-top: 2rem;
 		background-color: var(--pane-color-background);
 	}
 
-	& .column.right {
+	& .column.right-panel {
 		margin-top: 2rem;
-		border-radius: 1rem 0 0 1rem;
-		padding: 1rem;
-		background-color: var(--pane-color-background);
+		font-size: medium;
 	}
 }
 
@@ -36,7 +30,7 @@
 		/* 最少给中间留 300px，如果空间够大，再按 1fr 扩充 */
 		grid-template-columns: 150px minmax(300px, 1fr);	 
 
-		& .column.right {
+		& .column.right-panel {
 			width: 100%;
 			border-radius: 0;
 			padding: 1.2rem;
@@ -63,7 +57,7 @@
 			position: static;
 		}
 		
-		& .column.right {
+		& .column.right-panel {
 			order: 3;
 			grid-column: 1rem;
 			margin: 10px 0;
